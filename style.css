@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Montserrat:wght@300;400&family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --base-color: #8E2424;
+  --body-font: 'Inter', sans-serif;
+  --text-color: #667085;
+ 
+}
+html{
+  scroll-behavior: smooth;
+  
+}
+
+  body{
+    
+    font-family:var(--body-font); 
+    font-size: 1rem;
+  }
+
+  /*Header*/
+  .container-nav{    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 100%;
+    
+    position: fixed;
+    background: #fff;
+    z-index: 1;      
+  }  
+
+  /*logo*/
+  #logo{
+    display: flex;
+    align-self: stretch;    
+    align-items: center;
+    margin-right: 1rem; 
+  }
+
+  #logo img{
+    width: 26.5px;
+    height: 26.5px;
+    order: 0;
+    color: var(--base-color);
+    margin-right: 0.2rem;
+  }
+
+  #logo p{
+    font-size: 18px;    
+    font-weight: 500;    
+    order: 1;  
+  }
+
+  /*menu*/
+  .menu ul{    
+    display: flex;
+    flex-direction: row;    
+     
+  }
+  .navigation li{
+    padding-right: 2rem;
+  }
+  
+  .title{    
+    color: var(--text-color);
+  }
+
+  /*botao entrar cadastrar*/
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    
+  }
+
+  .buttons a{
+    padding: 0.66rem 1.12rem;
+    border-radius: 0.5rem;    
+  }
+
+  .entrar{
+    color: var(--text-color);
+    font-weight: 500;
+  }
+ 
+  .cadastro {
+    background-color: var(--base-color);
+    border: 1px solid var(--base-color);    
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    color: #f8efef;
+    font-weight: 500;
+  }
+
+  /* Sections */
+  
+  .title-section{
+    color: var(--base-color);    
+    font-size: 16px;
+    line-height: 1.5rem;
+    
+  }
+
+  .subtitle-section{
+    padding: 1.5rem;
+    color: #101828;    
+    font-size: 1.8rem;
+    line-height: 44px;
+  }
+  
+  p.text-section{
+    color: var(--text-color);    
+    font-size: 1.25rem;
+    line-height: 1.87rem;
+    max-width: 60%;
+    
+  }
+ .container{
+    text-align: center;    
+    padding: 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  span{
+    margin-right: 2rem;
+  }
+
+  /*Sobre Nós*/
+  #about{
+    padding-top: 3rem;
+  }
+  .container-data{
+    display: flex;
+    flex-wrap: wrap; /*declarar o tamanho máx do elemento filho*/
+    justify-content: center;    
+  }
+
+  .data{
+    padding: 1rem;
+    max-width: 260px;   
+  }
+
+  .amount{
+    color:var(--base-color);
+    font-size: 3.75rem;
+    Line-height: 72px;
+  }
+
+  .title-data{
+    color:#101828;
+    font-Weight: 500;
+    font-size: 1.1rem;
+    Line-height: 28px;
+  }
+
+  .text-data{
+    color:var(--text-color);
+    font-Weight: 400;
+    font-size: 1rem;
+    Line-height: 2rem;
+  }
+
+  /*vagas*/
+  span.vagas-abertas{    
+    background: rgba(142, 36, 36, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+  }
+  img.img-vagas{
+    width: 85%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    padding: 4rem 0 ;
+  }
+
+  .container-descricao-vaga{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  h2{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #101828;
+    margin-bottom: 2rem;
+  }
+  .descricao-vaga{
+    margin-bottom: 2rem;
+    width: 48rem;
+    height: 28rem;    
+    margin-left: calc(50% - 48rem/2);
+  }
+
+  .informacoes-vagas{
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    padding: 24px 24px 28px;
+    margin-bottom: 24px;
+  }
+  
+  .titulo-vaga{
+    font-weight: 500;
+    font-size: 1.125rem;  
+    
+  }
+  .informacoes{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-top: 2rem;
+  }
+
+
+  /*Depoimentos*/
+  .depoimentos {
+    background-color: rgba(195, 25, 25, 0.05);
+    border-radius: 0.25rem;
+    max-width: 85%;        
+    padding: 3rem 2rem;   
+  } 
+  
+  .img-avatar{
+    width: 56px;
+    height: 56px;
+    border-radius: 200px;
+  }
+
+  .name{
+    color: #101828;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .job{
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  /*Footer News*/
+  .news{    
+    background-color: #F9FAFB;       
+  }  
+
+  button.cadastro{
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  input{
+    width: 20rem;
+    height: 3rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;   
+    border: 1px solid #D0D5DD;
+    outline: none;  
+  } 
+    
+  .form-email{
+    padding-top: 2.5rem;
+    
+  }
+  footer span{
+    margin-top: 2rem;
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+
+ 
